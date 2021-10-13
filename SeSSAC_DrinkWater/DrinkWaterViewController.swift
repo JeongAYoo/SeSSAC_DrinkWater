@@ -82,6 +82,8 @@ class DrinkWaterViewController: UIViewController {
     @IBAction func resetTotal(_ sender: UIBarButtonItem) {
         totalWater = 0
         totalWaterLbl.text = "잘하셨어요!\n오늘 마신 양은\n\(totalWater)ml"
+        goal = calculateGoal()
+        goalLbl.text = "목표의 \(goal!)%"
     }
     
     @IBAction func drinkWaterBtn(_ sender: UIButton) {

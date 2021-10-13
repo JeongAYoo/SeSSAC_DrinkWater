@@ -131,8 +131,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="atE-sm-Sfd"/>
+                    <navigationItem key="navigationItem" id="atE-sm-Sfd">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="MDw-hu-jBX"/>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="saveBarBtn" destination="MDw-hu-jBX" id="X2S-Ib-Enx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f37-30-h8W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

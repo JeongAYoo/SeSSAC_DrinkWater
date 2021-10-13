@@ -8,11 +8,13 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    @IBOutlet var saveBarBtn: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor(red: 41, green: 150, blue: 110, alpha: 1)
+        saveBarBtn.title = "저장"
     }
     
 
