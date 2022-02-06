@@ -9,20 +9,20 @@
 /* Begin PBXBuildFile section */
 		07CCD0F3271189AB001CBDD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCD0F2271189AB001CBDD2 /* AppDelegate.swift */; };
 		07CCD0F5271189AB001CBDD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCD0F4271189AB001CBDD2 /* SceneDelegate.swift */; };
-		07CCD0F7271189AB001CBDD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCD0F6271189AB001CBDD2 /* ViewController.swift */; };
 		07CCD0FA271189AB001CBDD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CCD0F8271189AB001CBDD2 /* Main.storyboard */; };
 		07CCD0FC271189AC001CBDD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07CCD0FB271189AC001CBDD2 /* Assets.xcassets */; };
 		07CCD0FF271189AC001CBDD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CCD0FD271189AC001CBDD2 /* LaunchScreen.storyboard */; };
 		07CCD10727118EAF001CBDD2 /* DrinkWaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCD10627118EAF001CBDD2 /* DrinkWaterViewController.swift */; };
 		07CCD10927118EEA001CBDD2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CCD10827118EEA001CBDD2 /* ProfileViewController.swift */; };
 		07CCD10F271471AE001CBDD2 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 07CCD10E271471AE001CBDD2 /* IQKeyboardManagerSwift */; };
+		07FDA19927AD155B004982FD /* TextFieldEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 07FDA19827AD155B004982FD /* TextFieldEffects */; };
+		07FDA19C27AF88ED004982FD /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 07FDA19B27AF88ED004982FD /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07CCD0EF271189AB001CBDD2 /* SeSSAC_DrinkWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSSAC_DrinkWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CCD0F2271189AB001CBDD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07CCD0F4271189AB001CBDD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		07CCD0F6271189AB001CBDD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07CCD0F9271189AB001CBDD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07CCD0FB271189AC001CBDD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07CCD0FE271189AC001CBDD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,7 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FDA19C27AF88ED004982FD /* Toast in Frameworks */,
 				07CCD10F271471AE001CBDD2 /* IQKeyboardManagerSwift in Frameworks */,
+				07FDA19927AD155B004982FD /* TextFieldEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,7 +66,6 @@
 			children = (
 				07CCD0F2271189AB001CBDD2 /* AppDelegate.swift */,
 				07CCD0F4271189AB001CBDD2 /* SceneDelegate.swift */,
-				07CCD0F6271189AB001CBDD2 /* ViewController.swift */,
 				07CCD0F8271189AB001CBDD2 /* Main.storyboard */,
 				07CCD10827118EEA001CBDD2 /* ProfileViewController.swift */,
 				07CCD10627118EAF001CBDD2 /* DrinkWaterViewController.swift */,
@@ -93,6 +94,8 @@
 			name = SeSSAC_DrinkWater;
 			packageProductDependencies = (
 				07CCD10E271471AE001CBDD2 /* IQKeyboardManagerSwift */,
+				07FDA19827AD155B004982FD /* TextFieldEffects */,
+				07FDA19B27AF88ED004982FD /* Toast */,
 			);
 			productName = SeSSAC_DrinkWater;
 			productReference = 07CCD0EF271189AB001CBDD2 /* SeSSAC_DrinkWater.app */;
@@ -124,6 +127,8 @@
 			mainGroup = 07CCD0E6271189AB001CBDD2;
 			packageReferences = (
 				07CCD10D271471AE001CBDD2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				07FDA19727AD155B004982FD /* XCRemoteSwiftPackageReference "TextFieldEffects" */,
+				07FDA19A27AF88ED004982FD /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = 07CCD0F0271189AB001CBDD2 /* Products */;
 			projectDirPath = "";
@@ -152,7 +157,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07CCD0F7271189AB001CBDD2 /* ViewController.swift in Sources */,
 				07CCD0F3271189AB001CBDD2 /* AppDelegate.swift in Sources */,
 				07CCD10927118EEA001CBDD2 /* ProfileViewController.swift in Sources */,
 				07CCD0F5271189AB001CBDD2 /* SceneDelegate.swift in Sources */,
@@ -307,6 +311,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSSAC_DrinkWater/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "물 마시기💧";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,6 +340,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSSAC_DrinkWater/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "물 마시기💧";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -386,6 +392,22 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		07FDA19727AD155B004982FD /* XCRemoteSwiftPackageReference "TextFieldEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/raulriera/TextFieldEffects";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
+		07FDA19A27AF88ED004982FD /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -393,6 +415,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 07CCD10D271471AE001CBDD2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		07FDA19827AD155B004982FD /* TextFieldEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07FDA19727AD155B004982FD /* XCRemoteSwiftPackageReference "TextFieldEffects" */;
+			productName = TextFieldEffects;
+		};
+		07FDA19B27AF88ED004982FD /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07FDA19A27AF88ED004982FD /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
