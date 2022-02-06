@@ -32,17 +32,17 @@ class DrinkWaterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("\n\n\(UserDefaults.standard.bool(forKey: "isRegistered"))")
         
-        if UserDefaults.standard.bool(forKey: "isRegistered") {
-            setUser()
-            setupView()
-            updateView()
-            
-        } else {
+        if !UserDefaults.standard.bool(forKey: "isRegistered") {
             //미등록유저 ProfileVC 전환
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        
+        setUser()
+        setupView()
+        updateView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -93,12 +93,12 @@ class DrinkWaterViewController: UIViewController {
     }
     
     func setUser() {
-        let nickname = UserDefaults.standard.string(forKey: "nickname")!
-        let height = Double(UserDefaults.standard.string(forKey: "height")!)!
-        let weight = Double(UserDefaults.standard.string(forKey: "weight")!)!
+        let nickname = UserDefaults.standard.string(forKey: "nickname")
+        let height = UserDefaults.standard.integer(forKey: "height")
+        let weight = UserDefaults.standard.integer(forKey: "weight")
         
-        recommendedAmount = calculateRecommendedAmount(height: height, weight: weight)
-        recommendedAmountLbl.text = "\(nickname)님의 하루 물 권장 섭취량은 \(recommendedAmount)L 입니다."
+        recommendedAmount = calculateRecommendedAmount(height: Double(height), weight: Double(weight))
+        recommendedAmountLbl.text = "\(nickname ?? "")님의 하루 물 권장 섭취량은 \(recommendedAmount)L 입니다."
         
         totalWater = UserDefaults.standard.integer(forKey: "totalWater")
         goal = UserDefaults.standard.integer(forKey: "goal")
@@ -109,7 +109,11 @@ class DrinkWaterViewController: UIViewController {
     }
     
     func calculateGoal() -> Int {
-        return Int((Double(totalWater) / (recommendedAmount * 1000) * 100))
+        if totalWater == 0 {
+            return 0
+        } else {
+            return Int((Double(totalWater) / (recommendedAmount * 1000) * 100))
+        }
     }
     
     func updateView() {
